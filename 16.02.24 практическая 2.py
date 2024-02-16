@@ -2,8 +2,10 @@ a=int(input())
 b=int(input())
 if a>b:
     print(a, 'больше', b)
+    print(b, 'меньше', a)
 else:
     print(b, 'больше', a)
+    print(a, 'меньше', b)
 
 
 a=int(input("Сторона квадрата "))
