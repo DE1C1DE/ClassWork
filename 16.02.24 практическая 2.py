@@ -27,7 +27,7 @@ import math
 a=int(input("Сторона квадрата"))
 b=int(input("Радиус круга"))
 d=math.sqrt(a**2)
-if d>=b:
+if d>=b*2:
     print("Не впишется")
 else:
     print('Впишется')
