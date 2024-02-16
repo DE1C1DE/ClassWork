@@ -40,3 +40,27 @@ elif a=b:
 else:
     print(b, 'больше', a)
 
+#задача 10
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+f=sorted([a, b, c, d])
+print(f[-1]+f[-2])
+
+#задача 11
+dict1={1: 'Понедельник', 2:'Вторник', 3: 'Среда', 4: "Четверг", 5: "Пятница", 6:"Суббота", 7: "Воскресенье" }
+a=int(input())
+print(dict1[a])
+
+#задача 9
+a=int(input('Оклад'))
+if a>5000:
+    b=a*1.1
+    print("Премия - 10%")
+else:
+    b=a*1.12
+    print("Премия - 12%")
+print(b)
+
+
