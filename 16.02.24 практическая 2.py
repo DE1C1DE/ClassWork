@@ -3,6 +3,8 @@ b=int(input())
 if a>b:
     print(a, 'больше', b)
     print(b, 'меньше', a)
+elif a=b:
+    print('Ты чё, берега попутал, пёс?')
 else:
     print(b, 'больше', a)
     print(a, 'меньше', b)
@@ -33,6 +35,8 @@ else:
 b=int(input())
 if a>b:
     print(a, 'больше', b)
+elif a=b:
+    print('Ты чё, берега попутал, пёс?')
 else:
     print(b, 'больше', a)
 
