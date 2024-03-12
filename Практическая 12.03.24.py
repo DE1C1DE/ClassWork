@@ -21,5 +21,15 @@ def a(text):
 
 while True:
     a(input())
-  # Задание 4
-  
+  # Задание 4 недоделал
+  file = open('S:\\Группы\\ИБС215 Алгоритмизация\\III Сложные задания\\data.txt')
+mylist = file.readlines()
+mylist=str(mylist)
+file=mylist.split("\n")
+count=0
+for i in file:
+    if 'John' in i:
+        count+=1
+print(mylist)
+print(file)
+print(count)
