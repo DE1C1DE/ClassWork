@@ -4,17 +4,45 @@ b=[2, 4, 5, 3, 2, 5, 6, 7, 8, 8, 4, 5, 6, 7, 8, 9, 2]
 print(set(a+b))
 
 #28
-B=[[1, 3, 0],[1, 5, 7]]
+import random  
+def creatArray():
+    r = 0
+    print('Input first index matrix: ')
+    x = int(input())
+    print('Input second index matrix: ')
+    y = int(input())
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(0,100))
+            r += 1  
+    return array
+matrix=creatArray()
 count=0
-for i in B:
+for i in matrix:
     for n in i:
         if n != 0:
             count+=1
-print(B)
+print(matrix)
 print(count)
 
 #29
-D=[[1, -3, 0],[1, -5, 7]]
+import random  
+def creatArray():
+    r = 0
+    print('Input first index matrix: ')
+    x = int(input())
+    print('Input second index matrix: ')
+    y = int(input())
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(-100,100))
+            r += 1  
+    return array
+D=creatArray()
 proizv=1
 for i in D:
     for n in i:
@@ -23,15 +51,26 @@ for i in D:
 print(proizv)
 
 # 30
-import random
-n = 2
-matrix = [[random.randint(-99, 99) for j in range(n)] for i in range(n)]
+import random  
+def creatArray():
+    r = 0
+    print('Input first index matrix: ')
+    x = int(input())
+    print('Input second index matrix: ')
+    y = int(input())
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(-100,100))
+            r += 1  
+    return array
+D=creatArray()
 proizv=1
-for i in matrix:
+for i in D:
     for n in i:
-        if n > 0:
+        if n < 0:
             proizv *= n
-print(matrix)
 print(proizv)
 
 #31
