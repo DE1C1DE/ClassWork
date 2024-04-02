@@ -96,4 +96,35 @@ for i in matrix:
         if e != 0:
             a.append(e)
 print(a)
+#42
+import random  
+print('Input first index matrix: ')
+x = int(input())
+print('Input second index matrix: ')
+y = int(input())
+def creatArray():
+    r = 0
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(-10,10))
+            r += 1  
+    return array
+matrix=creatArray()
+print(matrix)
+a=[]
+c=[]
+b=0
+r=int()
+for i in range(y):
+    for e in range(x):
+        a.append(matrix[e][b])
+    r=max(a)
+    c.append(r)
+    r=0
+    a=[]
+    b+=1
+print(c)
+#41
 
