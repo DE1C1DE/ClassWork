@@ -72,3 +72,28 @@ Min=int()
 for i in matrix:
     Min=min(i)
     a.append(Min)
+#40
+import random  
+def creatArray():
+    r = 0
+    print('Input first index matrix: ')
+    x = int(input())
+    print('Input second index matrix: ')
+    y = int(input())
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(-1,1))
+            r += 1  
+    return array
+matrix=creatArray()
+print(matrix)
+a=[]
+count=0
+for i in matrix:
+    for e in i:
+        if e != 0:
+            a.append(e)
+print(a)
+
