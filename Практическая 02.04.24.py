@@ -127,4 +127,34 @@ for i in range(y):
     b+=1
 print(c)
 #41
+import random  
+print('Input first index matrix: ')
+x = int(input())
+print('Input second index matrix: ')
+y = int(input())
+def creatArray():
+    r = 0
+    array = []
+    for i in range(x):
+        array.append([])
+        for j in range(y):
+            array[i].append(random.randint(-10,10))
+            r += 1  
+    return array
+matrix=creatArray()
+print(matrix)
+a=1
+c=[]
+b=0
+r=1
+for i in range(y):
+    for e in range(x):
+        r = matrix[e][b]
+        if int(r) > 0:
+            a*=r
+    c.append(a)
+    r=1
+    a=1
+    b+=1
+print(c)
 
