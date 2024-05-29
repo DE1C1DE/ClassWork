@@ -27,3 +27,23 @@ while count!=5:
     except ValueError:
         count+=0
 print(array)
+
+#Задание 1 (Запросы в интернет)
+import webbrowser
+import urllib.request
+a=False
+browser={1: 'https://www.google.ru/search?q=', 2: 'https://ya.ru/search/?text='}
+try:
+    urllib.request.urlopen("http://google.com")
+    print("Вы поодключены к сети")
+    while a!=True:
+        inp=int(input('Выберите поисковик \n1 - Google, 2 - Yandex\n>>> '))
+        if inp == 1 or inp == 2:
+            a=True
+        else:
+            print('\nВыберите из предложеных вариантов\n')
+    question=input('Введите запрос\n>>> ')
+    webbrowser.open(f'{browser[inp]}{question}')
+
+except IOError:
+    print("Вы не подключены к сети")
